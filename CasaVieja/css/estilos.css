@@ -1,0 +1,158 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #cbc3b8; /* fondo beige cálido */
+    color: #333;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: linear-gradient(135deg, #8b4500, #a0522d); /* rojo vino a café */
+    color: #e9db6f;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #764804;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #b58c46;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #deb887;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ======MENÚ====== */
+#menu h3 {
+    margin-top: 40px;
+    color: #cc4507;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #600505;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.plato {
+    background: #fff;
+    border: 2px solid #600505;
+    margin: 12px auto;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 650px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.plato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    background: #fff8dc;
+}
+
+/*======Parte del fomrulario de contacto :D======*/
+form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #600505;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background: #8b0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #c75e09be;
+    transform: scale(1.05);
+}
+
+/* ======FOOTER y COPYRIGHT====== */
+footer {
+    background: #600505;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}
